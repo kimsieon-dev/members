@@ -9,7 +9,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<fmt:setLocale value="en_US"/>
+<%-- 	<fmt:setLocale value="en_US"/> 영문 출력	--%>
+<%-- 	<fmt:setLocale value="ko_KR"/> --%>
 	<fmt:bundle basename="test">
 		<fmt:message key="name"></fmt:message><br />
 		<fmt:message key="say"></fmt:message><br />
