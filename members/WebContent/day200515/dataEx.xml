@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<members>
+	<member>
+		<name>홍길동</name>
+		<age>20</age>
+		<grade>A</grade>
+	</member>
+	
+	<member>
+		<name>허균</name>
+		<age>45</age>
+		<grade>A</grade>
+	</member>
+	
+	<member>
+		<name>허난</name>
+		<age>28</age>
+		<grade>B</grade>
+	</member>
+</members>
+
+<employee>
+	<member>
+		<name>홍길동</name>
+		<age>20</age>
+		<grade>A</grade>
+	</member>
+</employee>
+
+{ 'members' : [
+	{name : "홍길동", age : 20, grade : A},
+	{name : "허균", age : 45, grade : A},
+	{name : "허난", age : 28, grade : B}
+	],
+	'employee' : ?
+}

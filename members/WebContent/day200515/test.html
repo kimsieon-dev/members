@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>지도 나타내기</h3>
+	<br />
+	<h4>구글 지도</h4>
+	<div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3233.7830238007577!2d128.5060802706274!3d35.85432358365642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9a0370fd6c120fa!2z7JiB64Ko6riw7Iig7KeB7JeF7KCE66y47ZWZ6rWQKOq1rCDsmIHrgqjquLDsiKDqtZDsnKHsm5Ap!5e0!3m2!1sko!2skr!4v1589501717898!5m2!1sko!2skr" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+	<br />
+	
+	<h4>다음 지도</h4>
+	<!-- * 카카오맵 - 지도퍼가기 -->
+	<!-- 1. 지도 노드 -->
+	<div id="daumRoughmapContainer1589502043313"
+		class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+	<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+	-->
+	<script charset="UTF-8" class="daum_roughmap_loader_script"
+		src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+	<!-- 3. 실행 스크립트 -->
+	<script charset="UTF-8">
+		new daum.roughmap.Lander({
+			"timestamp" : "1589502043313",
+			"key" : "ycch",
+			"mapWidth" : "640",
+			"mapHeight" : "360"
+		}).render();
+	</script>
+	
+	<h4>네이버 지도</h4>
+	<div>
+		<table cellpadding="0" cellspacing="0" width="462">
+			<tr> 
+				<td style="border:1px solid #cecece;">
+					<a href="https://v4.map.naver.com/?searchCoord=c594dcad028d6952c89a700f343c46a319581396c0d3dad09ee7a5821df9b4e0&query=7JiB64Ko6riw7Iig7KeB7JeF7KCE66y47ZWZ6rWQ&tab=1&lng=db3204ec95826e361566e4aa68c51fc1&mapMode=0&mpx=1c4bbf9a66df32d17491c30a057cdecc7dce67adeebb0a2bc8ab1f4e9b36e9e6ba18fa5513f0bee7588192c0f1171dfcaa1c70f07355b0f8458bee8d2962a376&lat=5da8017a076c7d5f5c1379281a8a4d43&dlevel=12&enc=b64&menu=location" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1589502540770_-1939213840" width="460" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
+				</td> 
+			</tr> 
+			
+			<tr> 
+				<td> 
+					<table cellpadding="0" cellspacing="0" width="100%"> 
+						<tr> 
+							<td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px; border-left:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="font-family: tahoma; font-size: 11px; color:#666;">2020.5.15</span>&nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;<a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;" href="https://v4.map.naver.com/?searchCoord=c594dcad028d6952c89a700f343c46a319581396c0d3dad09ee7a5821df9b4e0&query=7JiB64Ko6riw7Iig7KeB7JeF7KCE66y47ZWZ6rWQ&tab=1&lng=db3204ec95826e361566e4aa68c51fc1&mapMode=0&mpx=1c4bbf9a66df32d17491c30a057cdecc7dce67adeebb0a2bc8ab1f4e9b36e9e6ba18fa5513f0bee7588192c0f1171dfcaa1c70f07355b0f8458bee8d2962a376&lat=5da8017a076c7d5f5c1379281a8a4d43&dlevel=12&enc=b64&menu=location" target="_blank">지도 크게 보기</a> </td> <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="float:right;"><span style="font-size:9px; font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; color:#2db400; text-decoration:none;" href="https://www.navercorp.com" target="_blank">NAVER Corp.</a></span> </td> </tr> </table> </td> </tr> </table>
+	</div>
+</body>
+</html>

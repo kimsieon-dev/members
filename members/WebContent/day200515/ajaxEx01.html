@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="target" style="width: 300px; height: 60px; border: 1px solid black"></div>
+	<button type="button" onclick="getFromServer()">GET DATA</button>
+	
+	<script>
+		function getFromServer() {
+			var	req = new XMLHttpRequest();
+			req.onreadystatechange = function() {
+				if(req.readyState == 4 && req.status == 200) {
+					document.getElementById("target").innerHTML = req.responseText;
+				}
+			}
+			
+			req.open("GET", "test.jsp", true);
+			req.send();
+		}
+	</script>
+</body>
+
+</html>
